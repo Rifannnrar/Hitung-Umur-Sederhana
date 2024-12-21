@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cek usia masbro</title>
+</head>
+<body>
+  <center><h1>Pengecekan Usia Berdasarkan Tahun Masbro</h1></center>
+  <form method="POST" action="/usia">
+    <label>Masukkan Tahun Lahir Lu Bro</label>
+    <input type="number" name="tahun_lahir" />
+    <button type="submit">Hitung Usia</button>
+  </form>
+  {% if usia is not none%}
+  <p>Usia Lu Sekarang {{usia}} tahun</p>
+  {% endif %}
+
+  <a href="/"> Silahkan Kembali</a>
+</body>
+</html>
